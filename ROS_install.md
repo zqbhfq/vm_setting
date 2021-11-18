@@ -34,4 +34,12 @@ sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31
 sudo apt update
 sudo apt install ros-noetic-desktop-full
 ```
- 
+## step4: 设置环境
+```
+source /opt/ros/noetic/setup.bash
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+## step5: 安装依赖包
+`sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential`  
+
