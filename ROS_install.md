@@ -4,7 +4,11 @@
 - 踩坑1  
 
 ![image](https://user-images.githubusercontent.com/82703975/142416900-cf6c2bc7-c51a-4e21-9b96-2233b4b81ba5.png)  
-解决方法：修改/etc/apt/sources.list 将镜像源地址https 改为http  
+解决方法：
+```
+sudo vim /etc/apt/sources.list 
+```
+sources.list 替换为下列内容（将镜像源地址https改为http）
 ```
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
